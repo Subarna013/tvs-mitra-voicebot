@@ -1,6 +1,6 @@
 fastapi
 uvicorn
-python-dotenv
-twilio
-apscheduler
-boto3
+sqlalchemy
+psycopg2-binary  # if using PostgreSQL
+python-dotenv     # if you read env variables from .env
+twilio             # if you use Twilio
