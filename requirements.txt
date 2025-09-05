@@ -4,3 +4,5 @@ sqlalchemy==2.0.22
 pydantic==2.6.2
 apscheduler==3.11.0
 python-dotenv==1.0.0
+twilio==8.13.0
+psycopg2-binary==2.9.9
