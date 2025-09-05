@@ -71,7 +71,7 @@ from fastapi.openapi.utils import get_openapi
 import os
 import logging
 from dotenv import load_dotenv
-from app.routers import customer, payment  # ✅ import payment router
+from app.routers import customer, payment, reminders  # ✅ import payment router
 
 # ----------------- Load environment variables -----------------
 load_dotenv()
@@ -102,6 +102,8 @@ app = FastAPI(
 # ----------------- Routers -----------------
 app.include_router(customer.router, dependencies=[Depends(get_api_key)])
 app.include_router(payment.router, dependencies=[Depends(get_api_key)])  # ✅ add payment
+app.include_router(reminders.router, prefix="/reminders", tags=["Reminders"])
+
 
 # ----------------- Public endpoint -----------------
 @app.get("/health", tags=["Health"])

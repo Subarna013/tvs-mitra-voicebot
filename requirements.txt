@@ -2,9 +2,5 @@ fastapi
 uvicorn
 python-dotenv
 twilio
+apscheduler
 boto3
-<<<<<<< HEAD
-=======
-SQLAlchemy
-psycopg2-binary
->>>>>>> 1acc33f (Initial commit - FastAPI TVS Mitra VoiceBot)
